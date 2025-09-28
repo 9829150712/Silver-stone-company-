@@ -1,0 +1,223 @@
+09.28 14:26
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Silver Stone Company | Kota Stones & Tiles</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(120deg, #b3cbe3 0%, #f8fafc 50%, #b8d1f2 100%);
+      color: #292e3a;
+      min-height: 100vh;
+    }
+    header {
+      background: linear-gradient(90deg, #00bfae 0%, #9148e6 100%);
+      color: #fff;
+      text-align: center;
+      padding: 2.5rem 1rem 1.5rem 1rem;
+      border-bottom-left-radius: 40px;
+      border-bottom-right-radius: 40px;
+      box-shadow: 0 6px 18px rgba(145,72,230,0.1);
+      margin-bottom: 2rem;
+    }
+    header img {
+      max-width: 120px;
+      border-radius: 18px;
+      margin-bottom: 0.9rem;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.14);
+      background: #fff;
+      padding: 0.5rem;
+      border: 2.5px solid #fff;
+    }
+    header h1 {
+      margin: 0.2rem 0 0.5rem 0;
+      font-size: 2.7rem;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      text-shadow: 2px 4px 12px rgba(0,0,0,0.10);
+      font-family: 'Montserrat', sans-serif;
+    }
+    header p {
+      font-size: 1.22rem;
+      letter-spacing: 1px;
+      margin-top: 0;
+      color: #efdbff;
+      font-style: italic;
+    }
+    .container {
+      max-width: 920px;
+      margin: 2rem auto;
+      background: rgba(255,255,255, 0.9);
+      border-radius: 22px;
+      padding: 2.2rem 2.2rem 2.7rem 2.2rem;
+      box-shadow: 0 12px 34px rgba(0,0,0,0.09), 0 2px 6px rgba(0,191,174,0.07);
+    }
+    h2 {
+      color: #8027c3;
+      border-left: 6px solid #00bfae;
+      padding-left: 12px;
+      margin-top: 2rem;
+      margin-bottom: 1.2rem;
+      font-weight: 700;
+      font-size: 1.5rem;
+      letter-spacing: 0.7px;
+    }
+    ul {
+      padding-left: 2rem;
+      line-height: 1.75;
+      font-size: 1.11rem;
+      color: #44436a;
+      margin-bottom: 1.7rem;
+    }
+    .info {
+      font-size: 1.15rem;
+      line-height: 1.55;
+      margin-bottom: 1.8rem;
+      background: linear-gradient(90deg, #ede7f6 0%, #e0f7fa 100%);
+      border-radius: 10px;
+      padding: 1.1rem 1.3rem;
+      color: #202843;
+      box-shadow: 0 1px 6px rgba(0,191,174,0.05);
+    }
+    .info strong {
+      color: #8027c3;
+    }
+    .contact {
+      background: linear-gradient(100deg, #f3e9ff 20%, #eefcfc 80%);
+      border-radius: 12px;
+      padding: 2rem 1.5rem;
+      box-shadow: 0 4px 10px rgba(0,191,174,0.06);
+      margin-top: 2rem;
+      border-left: 6px solid #9148e6;
+    }
+    .contact p {
+      font-size: 1rem;
+      color: #344055;
+      margin: 0.6rem 0;
+    }
+    form label {
+      font-weight: 600;
+      color: #9148e6;
+      display: inline-block;
+      margin: 0.8rem 0 0.25rem 0;
+    }
+    form input[type="text"],
+    form input[type="email"],
+    form textarea {
+      width: 100%;
+      padding: 0.6rem 0.9rem;
+      font-size: 1rem;
+      border: 1.8px solid #ded0f8;
+      border-radius: 7px;
+      margin-bottom: 0.5rem;
+      margin-top: 0.08rem;
+      background: #fafcfb;
+      transition: border-color 0.3s ease;
+    }
+    form input[type="text"]:focus,
+    form input[type="email"]:focus,
+    form textarea:focus {
+      border-color: #9148e6;
+      outline: none;
+    }
+    form textarea {
+      resize: vertical;
+    }
+    button {
+      margin-top: 1.3rem;
+      background: linear-gradient(94deg, #00bfae 40%, #9148e6 100%);
+      color: white;
+      border: none;
+      padding: 0.8rem 2.3rem;
+      font-size: 1.15rem;
+      font-weight: bold;
+      border-radius: 15px;
+      cursor: pointer;
+      box-shadow: 0 6px 20px rgba(145,72,230,0.16);
+      transition: background 0.3s, transform 0.18s;
+    }
+    button:hover {
+      background: linear-gradient(90deg, #9148e6 0%, #00bfae 100%);
+      transform: scale(1.03);
+    }
+    footer {
+      text-align: center;
+      padding: 1.3rem 0 1.7rem 0;
+      font-size: 1rem;
+      color: #6e758a;
+      background: linear-gradient(-90deg, #efdbff 0%, #c7f2ef 100%);
+      margin-top: 4rem;
+      border-top-left-radius: 32px;
+      border-top-right-radius: 32px;
+      font-weight: 500;
+      letter-spacing: 0.8px;
+      box-shadow: 0 -2px 12px rgba(0,191,174,0.08);
+    }
+  </style>
+  <!-- Add Google Fonts for better typography -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Silver Stone Company Logo">
+    <h1>Silver Stone Company</h1>
+    <p>Kota Stone • Limestone • Kota Stone Tiles • Mandana stone</p>
+  </header>
+
+  <div class="container">
+    <div class="info">
+      <p><strong>Proprietor:</strong> Mr. Sandeep Gandhi</p>
+      <p><strong>Address:</strong> Parsamata Choraha, Kudayala, Ramganjmandi, Rajasthan - 326519</p>
+    </div>
+
+    <h2>About Us</h2>
+    <p>Silver Stone Company is a trusted supplier of premium Kota stone, limestone, and elegant Kota stone tiles. Serving customers across Rajasthan and beyond, we deliver quality and durability for flooring, construction, interiors, and exteriors.</p>
+
+    <h2>Our Products</h2>
+    <ul>
+      <li>Kota Stone Blocks & Slabs</li>
+      <li>Limestone Blocks & Slabs</li>
+      <li>Kota Stone Tiles (various sizes)</li>
+      <li>Mandana Stone</li>
+      <li>Customized Stone Solutions</li>
+    </ul>
+
+    <h2>Why Choose Us?</h2>
+    <ul>
+      <li>High-Quality, Locally Sourced Stone</li>
+      <li>Personalized Service from the Owner</li>
+      <li>Custom Orders Accepted</li>
+      <li>Timely Delivery</li>
+      <li>Competitive Pricing</li>
+    </ul>
+
+    <h2>Contact Us</h2>
+    <div class="contact">
+      <p><strong>Visit Us:</strong> Parsamata Choraha, Kudayala, Ramganjmandi, Rajasthan, Pin: 326519</p>
+      <p><strong>Phone:</strong> +91 98921 50712</p>
+      <p><strong>Email:</strong> silverstonecompany@gmail.com</p>
+
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your full name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Your email address" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" placeholder="Write your message here..." required></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Silver Stone Company. All rights reserved.
+  </footer>
+</body>
+</html>
+
