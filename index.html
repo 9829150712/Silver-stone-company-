@@ -1,223 +1,970 @@
-09.28 14:26
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Silver Stone Company | Kota Stones & Tiles</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Silver Stone Company | Premium Kota Stone Manufacturer & Supplier</title>
+
+  <meta name="description" content="Silver Stone Company is a Kota Stone manufacturer, supplier and wholesaler based in Kota, Rajasthan. Explore quality Kota Stone for flooring, slabs and bulk requirements.">
+
+  <meta name="keywords" content="Kota Stone, Kota Stone Manufacturer, Kota Stone Supplier, Kota Stone Wholesaler, Kota Stone Dealer, Kota Stone in Kota, Kota Stone Flooring">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+
   <style>
-    body {
+    * {
       margin: 0;
-      font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(120deg, #b3cbe3 0%, #f8fafc 50%, #b8d1f2 100%);
-      color: #292e3a;
-      min-height: 100vh;
+      padding: 0;
+      box-sizing: border-box;
     }
-    header {
-      background: linear-gradient(90deg, #00bfae 0%, #9148e6 100%);
-      color: #fff;
-      text-align: center;
-      padding: 2.5rem 1rem 1.5rem 1rem;
-      border-bottom-left-radius: 40px;
-      border-bottom-right-radius: 40px;
-      box-shadow: 0 6px 18px rgba(145,72,230,0.1);
-      margin-bottom: 2rem;
+
+    html {
+      scroll-behavior: smooth;
     }
-    header img {
-      max-width: 120px;
-      border-radius: 18px;
-      margin-bottom: 0.9rem;
-      box-shadow: 0 4px 16px rgba(0,0,0,0.14);
-      background: #fff;
-      padding: 0.5rem;
-      border: 2.5px solid #fff;
+
+    body {
+      font-family: "Inter", sans-serif;
+      color: #303030;
+      background: #f7f6f3;
+      line-height: 1.6;
     }
-    header h1 {
-      margin: 0.2rem 0 0.5rem 0;
-      font-size: 2.7rem;
-      font-weight: 800;
-      letter-spacing: 1.5px;
-      text-shadow: 2px 4px 12px rgba(0,0,0,0.10);
-      font-family: 'Montserrat', sans-serif;
+
+    h1, h2, h3, h4 {
+      font-family: "Poppins", sans-serif;
     }
-    header p {
-      font-size: 1.22rem;
-      letter-spacing: 1px;
-      margin-top: 0;
-      color: #efdbff;
-      font-style: italic;
+
+    a {
+      text-decoration: none;
+      color: inherit;
     }
+
     .container {
-      max-width: 920px;
-      margin: 2rem auto;
-      background: rgba(255,255,255, 0.9);
-      border-radius: 22px;
-      padding: 2.2rem 2.2rem 2.7rem 2.2rem;
-      box-shadow: 0 12px 34px rgba(0,0,0,0.09), 0 2px 6px rgba(0,191,174,0.07);
+      width: min(1120px, 92%);
+      margin: auto;
     }
-    h2 {
-      color: #8027c3;
-      border-left: 6px solid #00bfae;
-      padding-left: 12px;
-      margin-top: 2rem;
-      margin-bottom: 1.2rem;
-      font-weight: 700;
-      font-size: 1.5rem;
-      letter-spacing: 0.7px;
+
+    /* HEADER */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255,255,255,0.97);
+      border-bottom: 1px solid #dedbd5;
+      backdrop-filter: blur(8px);
     }
-    ul {
-      padding-left: 2rem;
-      line-height: 1.75;
-      font-size: 1.11rem;
-      color: #44436a;
-      margin-bottom: 1.7rem;
+
+    .nav {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
     }
-    .info {
-      font-size: 1.15rem;
-      line-height: 1.55;
-      margin-bottom: 1.8rem;
-      background: linear-gradient(90deg, #ede7f6 0%, #e0f7fa 100%);
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo {
+      width: 48px;
+      height: 48px;
+      border: 2px solid #555;
       border-radius: 10px;
-      padding: 1.1rem 1.3rem;
-      color: #202843;
-      box-shadow: 0 1px 6px rgba(0,191,174,0.05);
+      display: grid;
+      place-items: center;
+      background: #e9e7e2;
+      font-family: "Poppins", sans-serif;
+      font-weight: 800;
+      color: #3d3d3d;
     }
-    .info strong {
-      color: #8027c3;
+
+    .brand-text strong {
+      display: block;
+      font-family: "Poppins", sans-serif;
+      font-size: 18px;
+      color: #292929;
     }
-    .contact {
-      background: linear-gradient(100deg, #f3e9ff 20%, #eefcfc 80%);
-      border-radius: 12px;
-      padding: 2rem 1.5rem;
-      box-shadow: 0 4px 10px rgba(0,191,174,0.06);
-      margin-top: 2rem;
-      border-left: 6px solid #9148e6;
+
+    .brand-text span {
+      font-size: 11px;
+      color: #777;
+      letter-spacing: 1px;
     }
-    .contact p {
-      font-size: 1rem;
-      color: #344055;
-      margin: 0.6rem 0;
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      flex-wrap: wrap;
     }
-    form label {
+
+    nav a {
+      font-size: 14px;
       font-weight: 600;
-      color: #9148e6;
-      display: inline-block;
-      margin: 0.8rem 0 0.25rem 0;
+      color: #454545;
     }
-    form input[type="text"],
-    form input[type="email"],
-    form textarea {
-      width: 100%;
-      padding: 0.6rem 0.9rem;
-      font-size: 1rem;
-      border: 1.8px solid #ded0f8;
+
+    nav a:hover {
+      color: #111;
+    }
+
+    .nav-quote {
+      padding: 10px 16px;
       border-radius: 7px;
-      margin-bottom: 0.5rem;
-      margin-top: 0.08rem;
-      background: #fafcfb;
-      transition: border-color 0.3s ease;
+      background: #343434;
+      color: white;
     }
-    form input[type="text"]:focus,
-    form input[type="email"]:focus,
-    form textarea:focus {
-      border-color: #9148e6;
-      outline: none;
+
+    /* HERO */
+
+    .hero {
+      min-height: 650px;
+      display: flex;
+      align-items: center;
+      background:
+        linear-gradient(rgba(35,35,35,0.65), rgba(35,35,35,0.72)),
+        url("https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1800&q=85")
+        center/cover;
     }
-    form textarea {
+
+    .hero-content {
+      max-width: 760px;
+      color: white;
+      padding: 90px 0;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      padding: 7px 13px;
+      border: 1px solid rgba(255,255,255,0.5);
+      border-radius: 30px;
+      font-size: 12px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      font-size: clamp(38px, 6vw, 70px);
+      line-height: 1.08;
+      margin-bottom: 22px;
+    }
+
+    .hero p {
+      max-width: 680px;
+      font-size: 18px;
+      color: #eeeeee;
+      margin-bottom: 30px;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 13px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 13px 20px;
+      border-radius: 7px;
+      font-weight: 700;
+      font-size: 14px;
+      transition: 0.2s;
+    }
+
+    .btn-dark {
+      background: #303030;
+      color: white;
+    }
+
+    .btn-light {
+      background: white;
+      color: #292929;
+    }
+
+    .btn-outline {
+      border: 1px solid #aaa;
+      color: #333;
+      background: transparent;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    /* SECTIONS */
+
+    section {
+      padding: 80px 0;
+    }
+
+    .section-heading {
+      max-width: 720px;
+      margin-bottom: 42px;
+    }
+
+    .section-heading span {
+      color: #777;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .section-heading h2 {
+      font-size: clamp(30px, 4vw, 46px);
+      line-height: 1.15;
+      margin: 9px 0 14px;
+      color: #292929;
+    }
+
+    .section-heading p {
+      color: #666;
+    }
+
+    /* WHY */
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+
+    .card {
+      background: white;
+      border: 1px solid #e1ded8;
+      border-radius: 12px;
+      padding: 25px;
+    }
+
+    .card-icon {
+      width: 44px;
+      height: 44px;
+      display: grid;
+      place-items: center;
+      border-radius: 9px;
+      background: #e9e7e2;
+      margin-bottom: 18px;
+      font-weight: 800;
+    }
+
+    .card h3 {
+      font-size: 18px;
+      margin-bottom: 9px;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #666;
+    }
+
+    /* PRODUCTS */
+
+    .products {
+      background: #eceae5;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .product-card {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid #ddd9d1;
+    }
+
+    .product-img {
+      height: 220px;
+      background:
+        linear-gradient(rgba(50,50,50,.12), rgba(50,50,50,.12)),
+        url("https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=900&q=80")
+        center/cover;
+    }
+
+    .product-content {
+      padding: 21px;
+    }
+
+    .product-content h3 {
+      margin-bottom: 7px;
+    }
+
+    .product-content p {
+      color: #666;
+      font-size: 14px;
+    }
+
+    /* ABOUT */
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 55px;
+      align-items: center;
+    }
+
+    .about-image {
+      min-height: 450px;
+      border-radius: 14px;
+      background:
+        linear-gradient(rgba(40,40,40,.18), rgba(40,40,40,.18)),
+        url("https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1000&q=80")
+        center/cover;
+    }
+
+    .about-text p {
+      color: #666;
+      margin-bottom: 16px;
+    }
+
+    .check-list {
+      list-style: none;
+      margin-top: 20px;
+    }
+
+    .check-list li {
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+
+    /* GALLERY */
+
+    .gallery {
+      background: #fff;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+    }
+
+    .gallery-item {
+      height: 260px;
+      border-radius: 10px;
+      overflow: hidden;
+      background:
+        linear-gradient(rgba(50,50,50,.1), rgba(50,50,50,.1)),
+        url("https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=900&q=80")
+        center/cover;
+    }
+
+    .gallery-item:nth-child(2) {
+      background-image:
+        linear-gradient(rgba(50,50,50,.1), rgba(50,50,50,.1)),
+        url("https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=900&q=80");
+    }
+
+    .gallery-item:nth-child(3) {
+      background-image:
+        linear-gradient(rgba(50,50,50,.1), rgba(50,50,50,.1)),
+        url("https://images.unsplash.com/photo-1600573472550-8090b5e0745e?auto=format&fit=crop&w=900&q=80");
+    }
+
+    /* INFO */
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 22px;
+    }
+
+    .info-box {
+      background: white;
+      border: 1px solid #e1ded8;
+      border-radius: 12px;
+      padding: 27px;
+    }
+
+    .info-box h3 {
+      margin-bottom: 10px;
+    }
+
+    .info-box p {
+      color: #666;
+      font-size: 15px;
+    }
+
+    /* CONTACT */
+
+    .contact {
+      background: #303030;
+      color: white;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+    }
+
+    .contact .section-heading h2 {
+      color: white;
+    }
+
+    .contact .section-heading p {
+      color: #ccc;
+    }
+
+    .contact-details {
+      margin-top: 25px;
+    }
+
+    .contact-details div {
+      margin-bottom: 14px;
+    }
+
+    .contact-details a {
+      color: #fff;
+      text-decoration: underline;
+    }
+
+    form {
+      background: white;
+      color: #333;
+      padding: 28px;
+      border-radius: 12px;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 13px;
+      margin-bottom: 14px;
+      border: 1px solid #d5d2cc;
+      border-radius: 7px;
+      font: inherit;
+    }
+
+    textarea {
+      min-height: 130px;
       resize: vertical;
     }
+
     button {
-      margin-top: 1.3rem;
-      background: linear-gradient(94deg, #00bfae 40%, #9148e6 100%);
-      color: white;
       border: none;
-      padding: 0.8rem 2.3rem;
-      font-size: 1.15rem;
-      font-weight: bold;
-      border-radius: 15px;
       cursor: pointer;
-      box-shadow: 0 6px 20px rgba(145,72,230,0.16);
-      transition: background 0.3s, transform 0.18s;
+      width: 100%;
+      padding: 14px;
+      border-radius: 7px;
+      background: #303030;
+      color: white;
+      font-weight: 700;
+      font-size: 15px;
     }
-    button:hover {
-      background: linear-gradient(90deg, #9148e6 0%, #00bfae 100%);
-      transform: scale(1.03);
-    }
+
+    /* FOOTER */
+
     footer {
-      text-align: center;
-      padding: 1.3rem 0 1.7rem 0;
-      font-size: 1rem;
-      color: #6e758a;
-      background: linear-gradient(-90deg, #efdbff 0%, #c7f2ef 100%);
-      margin-top: 4rem;
-      border-top-left-radius: 32px;
-      border-top-right-radius: 32px;
-      font-weight: 500;
-      letter-spacing: 0.8px;
-      box-shadow: 0 -2px 12px rgba(0,191,174,0.08);
+      background: #202020;
+      color: #bbb;
+      padding: 35px 0;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 30px;
+    }
+
+    footer h3 {
+      color: white;
+      margin-bottom: 10px;
+    }
+
+    footer a {
+      display: block;
+      margin-bottom: 7px;
+      font-size: 14px;
+    }
+
+    .copyright {
+      margin-top: 30px;
+      padding-top: 20px;
+      border-top: 1px solid #3b3b3b;
+      font-size: 13px;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 850px) {
+      nav {
+        display: none;
+      }
+
+      .why-grid,
+      .product-grid,
+      .gallery-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .about-grid,
+      .contact-grid,
+      .info-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .why-grid,
+      .product-grid,
+      .gallery-grid,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        min-height: 600px;
+      }
+
+      section {
+        padding: 60px 0;
+      }
+
+      .about-image {
+        min-height: 300px;
+      }
     }
   </style>
-  <!-- Add Google Fonts for better typography -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&display=swap" rel="stylesheet">
 </head>
+
 <body>
-  <header>
-    <img src="logo.png" alt="Silver Stone Company Logo">
-    <h1>Silver Stone Company</h1>
-    <p>Kota Stone • Limestone • Kota Stone Tiles • Mandana stone</p>
-  </header>
 
+<header>
+  <div class="container nav">
+
+    <a href="#home" class="brand">
+      <div class="logo">SS</div>
+      <div class="brand-text">
+        <strong>Silver Stone Company</strong>
+        <span>KOTA STONE • KOTA, RAJASTHAN</span>
+      </div>
+    </a>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#products">Kota Stone</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#info">Knowledge</a>
+      <a href="#contact" class="nav-quote">Get a Quote</a>
+    </nav>
+
+  </div>
+</header>
+
+<main>
+
+<section class="hero" id="home">
   <div class="container">
-    <div class="info">
-      <p><strong>Proprietor:</strong> Mr. Sandeep Gandhi</p>
-      <p><strong>Address:</strong> Parsamata Choraha, Kudayala, Ramganjmandi, Rajasthan - 326519</p>
-    </div>
+    <div class="hero-content">
 
-    <h2>About Us</h2>
-    <p>Silver Stone Company is a trusted supplier of premium Kota stone, limestone, and elegant Kota stone tiles. Serving customers across Rajasthan and beyond, we deliver quality and durability for flooring, construction, interiors, and exteriors.</p>
+      <span class="eyebrow">Kota • Rajasthan • India</span>
 
-    <h2>Our Products</h2>
-    <ul>
-      <li>Kota Stone Blocks & Slabs</li>
-      <li>Limestone Blocks & Slabs</li>
-      <li>Kota Stone Tiles (various sizes)</li>
-      <li>Mandana Stone</li>
-      <li>Customized Stone Solutions</li>
-    </ul>
+      <h1>Premium Kota Stone Manufacturer & Supplier</h1>
 
-    <h2>Why Choose Us?</h2>
-    <ul>
-      <li>High-Quality, Locally Sourced Stone</li>
-      <li>Personalized Service from the Owner</li>
-      <li>Custom Orders Accepted</li>
-      <li>Timely Delivery</li>
-      <li>Competitive Pricing</li>
-    </ul>
+      <p>
+        Quality Kota Stone for flooring, construction and bulk requirements.
+        Silver Stone Company supplies Kota Stone from Kota, Rajasthan with a focus
+        on quality, reliable supply and professional service.
+      </p>
 
-    <h2>Contact Us</h2>
-    <div class="contact">
-      <p><strong>Visit Us:</strong> Parsamata Choraha, Kudayala, Ramganjmandi, Rajasthan, Pin: 326519</p>
-      <p><strong>Phone:</strong> +91 98921 50712</p>
-      <p><strong>Email:</strong> silverstonecompany@gmail.com</p>
+      <div class="buttons">
+        <a href="#products" class="btn btn-light">View Kota Stone</a>
+        <a href="#contact" class="btn btn-dark">Get a Quote</a>
+      </div>
 
-      <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" placeholder="Your full name" required>
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder="Your email address" required>
-
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="4" placeholder="Write your message here..." required></textarea>
-
-        <button type="submit">Send</button>
-      </form>
     </div>
   </div>
+</section>
 
-  <footer>
-    &copy; 2025 Silver Stone Company. All rights reserved.
-  </footer>
+
+<section>
+  <div class="container">
+
+    <div class="section-heading">
+      <span>Why Silver Stone</span>
+      <h2>Reliable Kota Stone supply from Kota</h2>
+      <p>
+        We focus on quality material, dependable supply and practical solutions
+        for customers looking for Kota Stone.
+      </p>
+    </div>
+
+    <div class="why-grid">
+
+      <div class="card">
+        <div class="card-icon">01</div>
+        <h3>Quality Material</h3>
+        <p>
+          Carefully selected Kota Stone suitable for different flooring and
+          construction requirements.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">02</div>
+        <h3>Direct Supply</h3>
+        <p>
+          Supply from Kota, Rajasthan for local and bulk requirements.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">03</div>
+        <h3>Multiple Requirements</h3>
+        <p>
+          Options can be discussed according to size, finish, quantity and project needs.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">04</div>
+        <h3>Reliable Service</h3>
+        <p>
+          Clear communication and support from enquiry to supply.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<section class="products" id="products">
+
+  <div class="container">
+
+    <div class="section-heading">
+      <span>Kota Stone Collection</span>
+      <h2>Kota Stone for different applications</h2>
+      <p>
+        Explore our Kota Stone range. Actual sizes, finishes and availability
+        can be discussed according to your requirement.
+      </p>
+    </div>
+
+    <div class="product-grid">
+
+      <div class="product-card">
+        <div class="product-img"></div>
+        <div class="product-content">
+          <h3>Kota Stone Flooring</h3>
+          <p>
+            Natural Kota Stone suitable for flooring and construction applications.
+          </p>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img"></div>
+        <div class="product-content">
+          <h3>Kota Stone Slabs</h3>
+          <p>
+            Kota Stone slabs for projects requiring larger stone pieces.
+          </p>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img"></div>
+        <div class="product-content">
+          <h3>Bulk Requirements</h3>
+          <p>
+            Discuss your project quantity and requirements with our team.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section id="about">
+
+  <div class="container about-grid">
+
+    <div class="about-image"></div>
+
+    <div class="about-text">
+
+      <div class="section-heading">
+        <span>About Us</span>
+        <h2>Silver Stone Company</h2>
+      </div>
+
+      <p>
+        Silver Stone Company is a Kota Stone manufacturer, supplier and wholesaler
+        based in Kota, Rajasthan.
+      </p>
+
+      <p>
+        Our focus is to provide quality Kota Stone and dependable supply for
+        customers, contractors, builders, dealers and project requirements.
+      </p>
+
+      <ul class="check-list">
+        <li>✓ Kota Stone focused business</li>
+        <li>✓ Manufacturer & supplier</li>
+        <li>✓ Bulk and project requirements</li>
+        <li>✓ Based in Kota, Rajasthan</li>
+      </ul>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="gallery" id="gallery">
+
+  <div class="container">
+
+    <div class="section-heading">
+      <span>Photo Gallery</span>
+      <h2>Kota Stone in real applications</h2>
+      <p>
+        Our gallery will showcase actual Kota Stone products, finishes and completed work.
+      </p>
+    </div>
+
+    <div class="gallery-grid">
+
+      <div class="gallery-item"></div>
+      <div class="gallery-item"></div>
+      <div class="gallery-item"></div>
+      <div class="gallery-item"></div>
+      <div class="gallery-item"></div>
+      <div class="gallery-item"></div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section id="info">
+
+  <div class="container">
+
+    <div class="section-heading">
+      <span>Kota Stone Knowledge</span>
+      <h2>Everything you should know before buying Kota Stone</h2>
+      <p>
+        Useful information about Kota Stone, applications, finishes, sizes,
+        maintenance and buying considerations will be added here.
+      </p>
+    </div>
+
+    <div class="info-grid">
+
+      <div class="info-box">
+        <h3>What is Kota Stone?</h3>
+        <p>
+          Kota Stone is a natural limestone widely known for its practical use
+          in flooring, paving and construction applications.
+        </p>
+      </div>
+
+      <div class="info-box">
+        <h3>Where is it used?</h3>
+        <p>
+          It can be used in homes, commercial spaces, corridors, outdoor areas,
+          institutional projects and other construction applications.
+        </p>
+      </div>
+
+      <div class="info-box">
+        <h3>Sizes & Thickness</h3>
+        <p>
+          Size and thickness requirements can vary by project. Contact us with
+          your requirement so the suitable option can be discussed.
+        </p>
+      </div>
+
+      <div class="info-box">
+        <h3>Buying Guide</h3>
+        <p>
+          Consider application, required quantity, size, thickness, finish,
+          transportation and installation requirements before ordering.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="contact" id="contact">
+
+  <div class="container contact-grid">
+
+    <div>
+
+      <div class="section-heading">
+        <span>Get in Touch</span>
+        <h2>Request a Kota Stone quotation</h2>
+        <p>
+          Tell us what you need and our team can discuss the requirement with you.
+        </p>
+      </div>
+
+      <div class="contact-details">
+
+        <div>
+          <strong>Owner:</strong> Sandeep Gandhi
+        </div>
+
+        <div>
+          <strong>Location:</strong> Parsamata Choraha, Kudayla, Kota, Rajasthan
+        </div>
+
+        <div>
+          <strong>Phone:</strong><br>
+          <a href="tel:9829150712">9829150712</a><br>
+          <a href="tel:9119340712">9119340712</a><br>
+          <a href="tel:8949700337">8949700337</a>
+        </div>
+
+        <div>
+          <strong>Email:</strong><br>
+          <a href="mailto:silverstonecompany@gmail.com">
+            silverstonecompany@gmail.com
+          </a>
+        </div>
+
+        <div>
+          <strong>Instagram:</strong><br>
+          <a href="https://www.instagram.com/silver_stone_company" target="_blank">
+            @silver_stone_company
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <form onsubmit="sendWhatsApp(event)">
+
+      <input type="text" id="name" placeholder="Your Name" required>
+
+      <input type="tel" id="phone" placeholder="Phone Number" required>
+
+      <select id="requirement">
+        <option value="Kota Stone">Kota Stone</option>
+        <option value="Kota Stone Flooring">Kota Stone Flooring</option>
+        <option value="Kota Stone Slabs">Kota Stone Slabs</option>
+        <option value="Bulk Requirement">Bulk Requirement</option>
+      </select>
+
+      <input type="text" id="quantity" placeholder="Approx. Quantity">
+
+      <textarea id="message" placeholder="Tell us about your requirement"></textarea>
+
+      <button type="submit">Send Enquiry on WhatsApp</button>
+
+    </form>
+
+  </div>
+
+</section>
+
+</main>
+
+
+<footer>
+
+  <div class="container">
+
+    <div class="footer-grid">
+
+      <div>
+        <h3>Silver Stone Company</h3>
+        <p>
+          Kota Stone Manufacturer, Supplier & Wholesaler
+          based in Kota, Rajasthan.
+        </p>
+      </div>
+
+      <div>
+        <h3>Quick Links</h3>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#products">Kota Stone</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div>
+        <h3>Contact</h3>
+        <a href="tel:9829150712">9829150712</a>
+        <a href="tel:9119340712">9119340712</a>
+        <a href="tel:8949700337">8949700337</a>
+        <a href="mailto:silverstonecompany@gmail.com">
+          Email Us
+        </a>
+      </div>
+
+    </div>
+
+    <div class="copyright">
+      © 2026 Silver Stone Company. All Rights Reserved.
+    </div>
+
+  </div>
+
+</footer>
+
+
+<script>
+
+function sendWhatsApp(event) {
+
+  event.preventDefault();
+
+  const name = document.getElementById("name").value;
+  const phone = document.getElementById("phone").value;
+  const requirement = document.getElementById("requirement").value;
+  const quantity = document.getElementById("quantity").value;
+  const message = document.getElementById("message").value;
+
+  const text =
+    "Hello Silver Stone Company,%0A%0A" +
+    "Name: " + encodeURIComponent(name) + "%0A" +
+    "Phone: " + encodeURIComponent(phone) + "%0A" +
+    "Requirement: " + encodeURIComponent(requirement) + "%0A" +
+    "Quantity: " + encodeURIComponent(quantity) + "%0A" +
+    "Message: " + encodeURIComponent(message);
+
+  window.open(
+    "https://wa.me/919829150712?text=" + text,
+    "_blank"
+  );
+}
+
+</script>
+
 </body>
 </html>
-
